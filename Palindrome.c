@@ -1,15 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,t;
+    int rev=0,n,r,temp=0;
     scanf("%d",&n);
-    //number and reverse of the number
-    int rev=0;t=n;
+    temp=n;
     while(n!=0)
     {
-        rev=rev*10+n%10;
+        r=n%10;
+        rev=rev*10+r;
         n=n/10;
     }
-    if(t==rev)printf("True");
-    else printf("False");
+    if(rev==temp)
+    {
+        printf("Palindrome");
+    }
+    else
+    printf("Not Palindrome");
 }
