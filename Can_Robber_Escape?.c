@@ -1,6 +1,5 @@
 #include<stdio.h>
-int main()
-{
+int main(){
     int n,i,c=0;
     scanf("%d",&n);
     int a[n];
